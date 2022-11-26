@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import HomeWebPage
+from .views import submit_expenses
+
 
 urlpatterns=[
-    path("",HomeWebPage.as_view(),name='home'),
+    #path(""),
+    path("submit/expense/",submit_expenses,name="submit_ex"),
     ]
